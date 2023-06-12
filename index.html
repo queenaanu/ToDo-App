@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />    
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Aanu | Todo app</title>
+    <script src="do.js" defer></script>
+  </head>
+
+  <body class="theme-dark">
+    <header class="flex-row">
+      <h1>TO DO</h1>
+      <div class="theme-block">
+        <input type="checkbox" name="theme" id="theme" />
+        <label for="theme"></label>
+      </div>
+    </header>
+
+    <main>
+      <div class="add-new-item flex-row">
+        <span></span>
+        <input
+          type="text"
+          placeholder="create a new todo..."
+          name="addition"
+          id="addition"
+        />
+      </div>
+      <section class="content">
+        <ul>
+          
+        </ul>
+      </section>
+      <div class="button-items flex-row">
+        <div class="items-left"><span>2</span>items left</div>
+        <div class="filter flex-row">
+          <label>
+            <input type="radio" name="filter" id="all" checked />
+            <span>All</span>
+          </label>
+          <label>
+            <input type="radio" name="filter" id="active" checked />
+            <span>Active</span>
+          </label>
+          <label>
+            <input type="radio" name="filter" id="completed" checked />
+            <span>Completed</span>
+          </label>
+        </div>
+        <span class="clear">Clear Completed</span>
+      </div>
+      <div class="attribution">
+        <!-- Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >.  -->
+        Coded by <a href="#">Esther Aanuoluwapo</a>.
+      </div>
+      
+    </main>
+  </body>
+</html>
